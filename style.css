@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+body {
+  background-color: #8ee3ef;
+  font-family: "Abril Fatface", serif;
+}
+.header {
+  background-color: #254e70;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  height: 10%;
+  width: 100%;
+}
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+}
+.title {
+  color: #fcfaf9;
+}
+.navbar .nav-link.active {
+  color: violet;
+}
+.nav-link {
+  color: #48e5c2;
+  font-weight: 700;
+}
+.nav-link:hover {
+  --bs-nav-link-hover-color: #8ee3ef;
+}
+.nav-item a {
+  font-size: 20px;
+}
+h1 {
+  color: #254e70;
+  font-size: 80px;
+}
+.text-with-border {
+  color: #c33c54;
+  -webkit-text-stroke: 0.3px #5e5e5e; /* Per i browser WebKit come Chrome e Safari */
+}
+.btn {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.btn-brand {
+  background-color: #37718e;
+  border: #37718e 2px;
+}
+.info-home div {
+  margin-bottom: 30px;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: #aef3e7;
+  border: none;
+}
+.title-project {
+  font-size: 40px;
+}
+.shadow-effect{
+  transition: all 0.5s;
+}
+.shadow-effect-fixed{
+  box-shadow: -6px 6px 0 rgba(0, 0, 0, 0.5);
+}
+.shadow-effect:hover {
+  box-shadow: -6px 6px 0 rgba(0, 0, 0, 0.5);
+}
+/* .project:hover {
+  transition: all 0.4s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.project img {
+  width: 300px;
+  height: 300px;
+  transition: all 0.4s ease;
+}
+.project img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+} */
+.background{
+  background-color: black;
+}
+.n {
+  color: grey;
+}
+.cm {
+  color: green;
+}
+.c {
+  color: orangered;
+}
+.m {
+  color: blue;
+}
+.icon-box{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+/* RESPONSIVE */
+
