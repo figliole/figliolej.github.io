@@ -16,7 +16,7 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <nav class="navbar navbar-expand-lg header fixed-top">
-        <div class="container-fluid" style="background-color: #254E70;">
+        <div class="container-fluid" style="background-color: #304C89;">
             <a class="navbar-brand title" href="#home">
                 <h3>Aldo.dev</h3>
             </a>
@@ -58,7 +58,8 @@
                             di FrontEnd.
                         </h3>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
+                        class="d-flex align-items-center">
                         <a href="#frontend" class="btn btn-brand p-3">Esplora il sito</a>
                     </div>
 
@@ -69,24 +70,58 @@
 
     <section id="frontend" class="full-height px-lg-5">
         <div class="container-fluid">
-            <div class="row pb-4" style="padding-top: 10%;">
+            <div class="row pb-4">
                 <div class="title-project col-lg-8" data-aos="fade-right" data-aos-duration="1000">I miei progetti</div>
             </div>
             <div class="row">
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-6 col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000"
                     data-aos-delay="300">
-                    <div class="bg-white rounded-3 shadow-effect"><img
-                            src="https://bootstrapious.com/i/snippets/sn-gallery/img-1.jpg" alt=""
-                            class="img-fluid card-img-top rounded-3">
+                    <div class="bg-white rounded-3 shadow-effect">
+                        <div id="carosello" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carosello" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carosello" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carosello" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carosello" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="Immagini progetto/LISTA.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/ACCESSO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/IL TUO PROFILO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/DETTAGLIO ORDINE.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carosello"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carosello"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="p-4">
-                            <h5> <a href="#" class="text-dark">Find Your Team</a></h5>
+                            <h5 class="text-dark">Find Your Team</h5>
                             <p class="small text-muted mb-0">Gestionale di prenotazione di eventi sportivi
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                                <button class="btn btn-brand">GitHub</button>
-                                <button class="btn btn-brand">Sito Web</button>
+                                <button class="btn btn-brand disabled">GitHub</button>
+                                <button class="btn btn-brand disabled">Sito Web</button>
                             </div>
                         </div>
                     </div>
@@ -96,17 +131,52 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-6 col-md-6 mb-4 mt-2" data-aos="fade-right" data-aos-duration="1000"
                     data-aos-delay="400">
-                    <div class="bg-white rounded-3 shadow-effect"><img
-                            src="https://bootstrapious.com/i/snippets/sn-gallery/img-2.jpg" alt=""
-                            class="img-fluid card-img-top rounded-3">
+                    <div class="bg-white rounded-3 shadow-effect">
+                        <div id="carosello2" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carosello2" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carosello2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carosello2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carosello2" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="Immagini progetto/LISTA.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/ACCESSO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/IL TUO PROFILO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/DETTAGLIO ORDINE.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carosello2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carosello2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="p-4">
                             <h5> <a href="#" class="text-dark">MarvelApp (Angular)</a></h5>
                             <p class="small text-muted mb-0">Enciclopedia Marvel realizzata in Angular
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                                <button class="btn btn-brand">GitHub</button>
-                                <button class="btn btn-brand">Sito Web</button>
+                                <a class="btn btn-brand"
+                                    href="https://github.com/figliole/marvelapp-angular.git">GitHub</a>
+                                <a class="btn btn-brand">Sito Web</a>
                             </div>
                         </div>
                     </div>
@@ -116,9 +186,43 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-6 col-md-6 mb-4 mt-3" data-aos="fade-right" data-aos-duration="1000"
                     data-aos-delay="500">
-                    <div class="bg-white rounded-3 shadow-effect"><img
-                            src="https://bootstrapious.com/i/snippets/sn-gallery/img-3.jpg" alt=""
-                            class="img-fluid card-img-top rounded-3">
+                    <div class="bg-white rounded-3 shadow-effect">
+                        <div id="carosello3" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carosello3" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carosello3" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carosello3" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carosello3" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="Immagini progetto/LISTA.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/ACCESSO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/IL TUO PROFILO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/DETTAGLIO ORDINE.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carosello3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carosello3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="p-4">
                             <h5> <a href="#" class="text-dark">MarvelApp (React)</a></h5>
                             <p class="small text-muted mb-0">Enciclopedia Marvel realizzata in React
@@ -136,9 +240,43 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-6 col-md-6 mb-4 mt-4 " data-aos="fade-right" data-aos-duration="1000"
                     data-aos-delay="600">
-                    <div class="bg-white rounded-3 shadow-effect"><img
-                            src="https://bootstrapious.com/i/snippets/sn-gallery/img-4.jpg" alt=""
-                            class="img-fluid card-img-top rounded-3">
+                    <div class="bg-white rounded-3 shadow-effect">
+                        <div id="carosello4" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carosello4" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carosello4" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carosello4" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carosello4" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="Immagini progetto/LISTA.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/ACCESSO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/IL TUO PROFILO.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Immagini progetto/DETTAGLIO ORDINE.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carosello4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carosello4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="p-4">
                             <h5> <a href="#" class="text-dark">Order Food</a></h5>
                             <p class="small text-muted mb-0">SPA per ordinazione cibo min un ristorante
@@ -157,14 +295,14 @@
 
     <section id="testing" class="full-height px-lg-5">
         <div class="container-fluid">
-            <div class="row pb-4" style="padding-top: 10%;">
+            <div class="row pb-4">
                 <div class="title-project" data-aos="fade-up" data-aos-duration="1000">Software Testing</div>
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="col-xl-8 col-lg-8 mb-4 order-lg-1 order-2">
                     <pre class="background rounded-5 shadow-effect-fixed">
                             <code>
-                                <span class="n"> <span class="c">WebDriver</span> driver = new <span class="c">>ChromeDriver</span>();</span> 
+                                <span class="n"><span class="c">WebDriver</span> driver = new <span class="c">>ChromeDriver</span>();</span> 
                                 <span class="n">driver.<span class="m">get("il link del sito da aprire")</span>; <span class="cm">//Apre la pagina nel browser indicato in precedenza</span></span>
 
                                 <span class="n"><span class="c">WebElement</span> emailInput = driver.<span class="m">findElement(By.id("//inputEmail"))</span>; <span class="cm">//Trova l'input tramite l'id "inputEmail"</span></span>
@@ -202,12 +340,12 @@
 
     <section id="skills" class="full-height px-lg-5">
         <div class="container-fluid">
-            <div class="row pb-4" style="padding-top: 10%;">
+            <div class="row pb-4">
                 <div class="title-project" data-aos="fade-left" data-aos-duration="1000">Skills</div>
             </div>
             <div class="row mr-2">
                 <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="bg-primary rounded-3 p-3 mb-3 shadow-effect">
+                    <div class="background-div rounded-3 p-3 mb-3 shadow-effect">
                         <div class="icon-box rounded-3">
                             <i class="las la-book"></i>
                         </div>
@@ -225,7 +363,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-primary rounded-3 p-3 mb-3 shadow-effect">
+                    <div class="background-div rounded-3 p-3 mb-3 shadow-effect">
                         <div class="icon-box rounded-3">
                             <i class="las la-certificate"></i>
                         </div>
@@ -238,7 +376,7 @@
                                 </p>
                         </div>
                     </div>
-                    <div class="bg-primary rounded-3 p-3 mb-3 shadow-effect">
+                    <div class="background-div rounded-3 p-3 mb-3 shadow-effect">
                         <div class="icon-box rounded-3">
                             <i class="las la-building"></i>
                         </div>
@@ -260,7 +398,7 @@
                 <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                     <div class="row">
                         <div class="col-6 pb-2">
-                            <div class="p-2 bg-primary rounded-3 shadow-effect">
+                            <div class="p-2 background-div rounded-3 shadow-effect">
                                 <div class="icon-box rounded-3">
                                     <i class="lab la-angular"></i>
                                 </div>
@@ -274,7 +412,7 @@
                             </div>
                         </div>
                         <div class="col-6 pb-2">
-                            <div class="p-2 bg-primary rounded-3 shadow-effect">
+                            <div class="p-2 background-div rounded-3 shadow-effect">
                                 <div class="icon-box rounded-3">
                                     <i class="lab la-react"></i>
                                 </div>
@@ -289,7 +427,7 @@
                             </div>
                         </div>
                         <div class="col-6 pb-2">
-                            <div class="p-2 bg-primary rounded-3 shadow-effect">
+                            <div class="p-2 background-div rounded-3 shadow-effect">
                                 <div class="icon-box rounded-3">
                                     <i class="lab la-html5"></i>
                                 </div>
@@ -306,7 +444,7 @@
                             </div>
                         </div>
                         <div class="col-6 pb-2">
-                            <div class="p-2 bg-primary rounded-3 shadow-effect">
+                            <div class="p-2 background-div rounded-3 shadow-effect">
                                 <div class="icon-box rounded-3">
                                     <i class="las la-archive"></i>
                                 </div>
@@ -326,39 +464,31 @@
     </section>
 
     <section id="contacts" class="full-height px-lg-5 px-4">
-        <div class="row justify-content-center text-center pb-4" style="padding-top: 10%;">
+        <div class="row justify-content-center text-center pb-4">
             <div class="col-lg-8">
                 <h4 class="title-project" data-aos="zoom-in" data-aos-duration="800">Contacts</h6>
             </div>
             <div class="col-lg-8" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="row justify-content-center text-center pb-4">
                     <div class="col-12 col-md-3">
-                        <div class="bg-primary rounded-3">
+                        <div class="background-div rounded-3 d-flex align-items-center justify-content-center pe-2">
                             <div class="icon-box">
                                 <i class="lab la-linkedin-in"></i>
                             </div>
-                            <div><a href="">Linkedin</a></div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="bg-primary rounded-3">
-                            <div class="icon-box">
-                                <i class="las la-inbox"></i>
+                            <div><a href="https://www.linkedin.com/in/cataldo-figliolia" class="text-light">Linkedin</a>
                             </div>
-                            <div><a href="">Email</a></div>
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <div class="bg-primary rounded-3">
+                        <div class="background-div rounded-3 d-flex align-items-center justify-content-center pe-2">
                             <div class="icon-box">
                                 <i class="lab la-github"></i>
                             </div>
-                            <div><a href="">GitHub</a></div>
+                            <div><a href="https://github.com/figliole" class="text-light">GitHub</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-8" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                 <h2>Sei interessato a lavorare insieme?<br>
                     Inserisci il tuo nome, la tua mail e verrai ricontattato</h2>
@@ -370,10 +500,11 @@
                         <input type="text" class="form-control" placeholder="Inserisci la tua email">
                     </div>
                     <div class="form-group col-12">
-                        <textarea rows="4" class="form-control" placeholder="Inserisci cosa vuoi"></textarea>
+                        <textarea rows="4" class="form-control"
+                            placeholder="Inserisci l'oggetto della richiesta"></textarea>
                     </div>
                     <div>
-                        <button>Invia richiesta</button>
+                        <button class="btn btn-brand">Invia richiesta</button>
                     </div>
                 </form>
             </div>
