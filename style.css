@@ -95,9 +95,14 @@ h1 {
 }
 .background-div{
   background-color: #9EB7E5;
+
+}
+.skills{
+  height: 100%;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #cbcbcb; /* Colore di sfondo desiderato */
 }
+
 
