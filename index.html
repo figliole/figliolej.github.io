@@ -20,10 +20,12 @@
             <a class="navbar-brand title" href="#home">
                 <h3>Aldo.dev</h3>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="navbarToggleBtn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item p-2">
@@ -46,14 +48,16 @@
         </div>
     </nav>
 
-    <section id="home" class="px-lg-5">
+    <section id="home" class="px-3">
         <div class="container-fluid full-height d-flex align-items-center justify-content-center">
             <div class="row ">
                 <div class="col-12 info-home">
                     <div>
-                        <h1 data-aos="fade-up" data-aos-duration="1000" style="font-size: 63px;"><b class="text-with-border">
+                        <h1 data-aos="fade-up" data-aos-duration="1000" style="font-size: 63px;"><b
+                                class="text-with-border">
                                 FrontEnd Developer</b> & <b class="text-with-border">Software Testing </b></h1>
-                        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" style="margin-top: 30px; font-size: 30px;">
+                        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+                            style="margin-top: 30px; font-size: 30px;">
                             Sono Cataldo Figliolia, per gli amici Aldo. Sono un appassionato
                             di FrontEnd.
                         </h3>
@@ -68,7 +72,7 @@
         </div>
     </section>
 
-    <section id="frontend" class="full-height px-lg-5">
+    <section id="frontend" class="full-height px-3">
         <div class="container-fluid">
             <div class="row pb-4">
                 <div class="title-project col-lg-8" data-aos="fade-right" data-aos-duration="1000">I miei progetti</div>
@@ -224,7 +228,8 @@
                             </button>
                         </div>
                         <div class="p-4">
-                            <h5> <a href="https://github.com/figliole/marvelapp-react" class="text-dark">MarvelApp (React)</a></h5>
+                            <h5> <a href="https://github.com/figliole/marvelapp-react" class="text-dark">MarvelApp
+                                    (React)</a></h5>
                             <p class="small text-muted mb-0">Enciclopedia Marvel realizzata in React
                             </p>
                             <div
@@ -293,7 +298,7 @@
         </div>
     </section>
 
-    <section id="testing" class="full-height px-lg-5">
+    <section id="testing" class="full-height px-3">
         <div class="container-fluid">
             <div class="row pb-4">
                 <div class="title-project" data-aos="fade-up" data-aos-duration="1000">Software Testing</div>
@@ -301,22 +306,22 @@
             <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="col-xl-8 col-lg-8 mb-4 order-lg-1 order-2">
                     <pre class="background rounded-5 shadow-effect-fixed">
-                            <code>
-                                <span class="n"><span class="c">WebDriver</span> driver = new <span class="c">>ChromeDriver</span>();</span> 
-                                <span class="n">driver.<span class="m">get("il link del sito da aprire")</span>; <span class="cm">//Apre la pagina nel browser indicato in precedenza</span></span>
+                                <code>
+                                    <span class="n"><span class="c">WebDriver</span> driver = new <span class="c">>ChromeDriver</span>();</span> 
+                                    <span class="n">driver.<span class="m">get("il link del sito da aprire")</span>; <span class="cm">//Apre la pagina nel browser indicato in precedenza</span></span>
 
-                                <span class="n"><span class="c">WebElement</span> emailInput = driver.<span class="m">findElement(By.id("//inputEmail"))</span>; <span class="cm">//Trova l'input tramite l'id "inputEmail"</span></span>
-                                <span class="n">emailInput.<span class="m">sendKeys("figlioliacat@gmail.com")</span>; <span class="cm">//Inserisce il valore "figlioliacat@gmail.com"</span></span>
-                        
-                                <span class="n"><span class="c">WebElement</span> passwordInput = driver.<span class="m">findElement(By.id("//inputPassword"))</span>; <span class="cm">//Trova l'input tramite l'id "inputPassword"</span></span>
-                                <span class="n">passwordInput.<span class="m">sendKeys("Aldo1234!")</span>; <span class="cm">//Inserisce il valore "Aldo1234!"</span></span>
+                                    <span class="n"><span class="c">WebElement</span> emailInput = driver.<span class="m">findElement(By.id("//inputEmail"))</span>; <span class="cm">//Trova l'input tramite l'id "inputEmail"</span></span>
+                                    <span class="n">emailInput.<span class="m">sendKeys("figlioliacat@gmail.com")</span>; <span class="cm">//Inserisce il valore "figlioliacat@gmail.com"</span></span>
+                            
+                                    <span class="n"><span class="c">WebElement</span> passwordInput = driver.<span class="m">findElement(By.id("//inputPassword"))</span>; <span class="cm">//Trova l'input tramite l'id "inputPassword"</span></span>
+                                    <span class="n">passwordInput.<span class="m">sendKeys("Aldo1234!")</span>; <span class="cm">//Inserisce il valore "Aldo1234!"</span></span>
 
-                                <span class="n"><span class="c">WebElement</span> button = driver.<span class="m">findElement(By.id("//buttonConferma"))</span>; <span class="cm">//Trova il button tramite l'id "buttonConferma"</span></span>
-                                <span class="n">button.<span class="m">click()</span>; <span class="cm">//Effettua il click al button</span></span>
+                                    <span class="n"><span class="c">WebElement</span> button = driver.<span class="m">findElement(By.id("//buttonConferma"))</span>; <span class="cm">//Trova il button tramite l'id "buttonConferma"</span></span>
+                                    <span class="n">button.<span class="m">click()</span>; <span class="cm">//Effettua il click al button</span></span>
 
-                                <span class="n"> Thread.<span class="m">sleep(2000)</span>; <span class="cm">//Blocca il test per 2 sec</span></span>
-                            </code>
-                        </pre>
+                                    <span class="n"> Thread.<span class="m">sleep(2000)</span>; <span class="cm">//Blocca il test per 2 sec</span></span>
+                                </code>
+                            </pre>
                     <span class="fs-5"> Questo è uno script, scritto in Java utilizzando il framework Selenium, che
                         permette di
                         compilare automaticamente i campi di input e, successivamente, cliccare sul button di conferma.
@@ -338,7 +343,7 @@
         </div>
     </section>
 
-    <section id="skills" class="full-height px-lg-5">
+    <section id="skills" class="full-height px-3">
         <div class="container-fluid">
             <div class="row pb-4">
                 <div class="title-project" data-aos="fade-left" data-aos-duration="1000">Skills</div>
@@ -494,14 +499,14 @@
         </div>
     </section>
 
-    <section id="contacts" class="full-height px-lg-5 px-4">
+    <section id="contacts" class="full-height px-3">
         <div class="row justify-content-center text-center pb-4">
             <div class="col-lg-8">
                 <h4 class="title-project" data-aos="zoom-in" data-aos-duration="800">Contacts</h6>
             </div>
             <div class="col-lg-8" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="row justify-content-center text-center pb-4">
-                    <div class="col-12 col-md-3 pb-2">
+                    <div class="col-12 col-lg-3 pb-2">
                         <div class="background-div rounded-3 d-flex align-items-center justify-content-center pe-2">
                             <div class="icon-box">
                                 <i class="lab la-linkedin-in"></i>
@@ -510,7 +515,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pb-2">
+                    <div class="col-12 col-lg-3 pb-2">
                         <div class="background-div rounded-3 d-flex align-items-center justify-content-center pe-2">
                             <div class="icon-box">
                                 <i class="lab la-github"></i>
@@ -518,7 +523,7 @@
                             <div><a href="https://github.com/figliole" class="text-light">GitHub</a></div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pb-2">
+                    <div class="col-12 col-lg-3 pb-2">
                         <div class="background-div rounded-3 d-flex align-items-center justify-content-center pe-2">
                             <div class="icon-box">
                                 <i class="las la-at"></i>
@@ -561,6 +566,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Script per chiudere la navbar al clic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Assicurati che l'oggetto bootstrap sia disponibile prima di chiamare il metodo Collapse.hide()
+            if (typeof bootstrap !== 'undefined') {
+                // Seleziona il toggle button della navbar
+                var navbarToggleBtn = document.getElementById('navbarToggleBtn');
+    
+                // Aggiungi un gestore di eventi al clic degli elementi di navigazione
+                var navbarNavItems = document.querySelectorAll('.navbar-nav a');
+                navbarNavItems.forEach(function (navItem) {
+                    navItem.addEventListener('click', function () {
+                        // Chiudi la navbar
+                        var bsCollapse = new bootstrap.Collapse(navbarToggleBtn);
+                        bsCollapse.hide();
+                    });
+                });
+            }
+        });
+    </script>   
 </body>
 
 </html>
