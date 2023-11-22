@@ -57,13 +57,14 @@
                                 class="text-with-border">
                                 FrontEnd Developer</b> & <b class="text-with-border">Software Testing </b></h1>
                         <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
-                            style="margin-top: 30px; font-size: 30px;">
+                            style="margin-top: 30px; font-size: 30px;"
+                            class="d-flex align-items-center justify-content-center">
                             Sono Cataldo Figliolia, per gli amici Aldo. Sono un appassionato
                             di FrontEnd.
                         </h3>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
-                        class="d-flex align-items-center">
+                        class="d-flex align-items-center justify-content-center">
                         <a href="#frontend" class="btn btn-brand p-3">Esplora il sito</a>
                     </div>
 
@@ -119,9 +120,15 @@
                             </button>
                         </div>
                         <div class="p-4">
-                            <h5 class="text-dark">Find Your Team</h5>
-                            <p class="small text-muted mb-0">Gestionale di prenotazione di eventi sportivi
+                            <h5 class="text-dark d-flex align-items-center justify-content-center">Find Your Team</h5>
+                            <p class="small text-muted mb-0 d-flex align-items-center justify-content-center">Gestionale
+                                di prenotazione di eventi sportivi
                             </p>
+                            <div class="m-2 d-flex align-items-center justify-content-center">
+                                <span class="rounded-3 bg-danger p-2 m-1">Angular</span>
+                                <span class="rounded-3 bg-success p-2 m-1">Spring</span>
+                                <span class="rounded-3 bg-secondary p-2 m-1">MySQL</span>
+                            </div>
                             <div
                                 class="d-flex align-items-center justify-content-center rounded-pill bg-light px-3 py-2 mt-4">
                                 <button class="btn btn-brand disabled">GitHub</button>
@@ -139,10 +146,15 @@
                             style="height: 249px;" alt="...">
                         <div class="p-4">
                             <h5> <a href="https://github.com/figliole/marvelapp-angular"
-                                    class="text-dark link-underline link-underline-opacity-0">MarvelApp (Angular)</a>
+                                    class="text-dark link-underline link-underline-opacity-0 d-flex align-items-center justify-content-center">MarvelApp
+                                    (Angular)</a>
                             </h5>
-                            <p class="small text-muted mb-0">Enciclopedia Marvel realizzata in Angular
+                            <p class="small text-muted mb-0 d-flex align-items-center justify-content-center">
+                                Enciclopedia Marvel realizzata in Angular
                             </p>
+                            <div class="m-2 d-flex align-items-center justify-content-center">
+                                <span class="rounded-3 bg-danger p-2 m-1">Angular</span>
+                            </div>
                             <div
                                 class="d-flex align-items-center justify-content-center rounded-pill bg-light px-3 py-2 mt-4">
                                 <button class="btn btn-brand"><a href="https://github.com/figliole/marvelapp-angular"
@@ -193,10 +205,14 @@
                         </div>
                         <div class="p-4">
                             <h5> <a href="https://github.com/figliole/marvelapp-react"
-                                    class="text-dark link-underline link-underline-opacity-0">MarvelApp
+                                    class="text-dark link-underline link-underline-opacity-0 d-flex align-items-center justify-content-center">MarvelApp
                                     (React)</a></h5>
-                            <p class="small text-muted mb-0">Enciclopedia Marvel realizzata in React
+                            <p class="small text-muted mb-0 d-flex align-items-center justify-content-center">
+                                Enciclopedia Marvel realizzata in React
                             </p>
+                            <div class="m-2 d-flex align-items-center justify-content-center">
+                                <span class="rounded-3 bg-info p-2 m-1">React</span>
+                            </div>
                             <div
                                 class="d-flex align-items-center justify-content-center rounded-pill bg-light px-3 py-2 mt-4">
                                 <button class="btn btn-brand"><a href="https://github.com/figliole/marvelapp-react"
@@ -247,9 +263,14 @@
                         </div>
                         <div class="p-4">
                             <h5> <a href="https://github.com/figliole/order-food"
-                                    class="text-dark link-underline link-underline-opacity-0">Order Food</a></h5>
-                            <p class="small text-muted mb-0">SPA per ordinazione cibo min un ristorante
+                                    class="text-dark link-underline link-underline-opacity-0  d-flex align-items-center justify-content-centerF">Order
+                                    Food</a></h5>
+                            <p class="small text-muted mb-0  d-flex align-items-center justify-content-center">SPA per
+                                ordinazione cibo min un ristorante
                             </p>
+                            <div class="m-2 d-flex align-items-center justify-content-center">
+                                <span class="rounded-3 bg-info p-2 m-1">React</span>
+                            </div>
                             <div
                                 class="d-flex align-items-center justify-content-center rounded-pill bg-light px-3 py-2 mt-4">
                                 <button class="btn btn-brand"><a href="https://github.com/figliole/order-food"
@@ -517,7 +538,7 @@
                 </form>
             </div>
         </div>
-        <footer class="d-flex align-items-center justify-content-center mt-5">
+        <footer class="d-flex align-items-center justify-content-center" style="margin-top: 300px;">
             <span>Sito realizzato da Figliolia Cataldo con HTML, CSS e Bootstrap</span>
         </footer>
     </section>
@@ -533,27 +554,6 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Script per chiudere la navbar al clic -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Assicurati che l'oggetto bootstrap sia disponibile prima di chiamare il metodo Collapse.hide()
-            if (typeof bootstrap !== 'undefined') {
-                // Seleziona il toggle button della navbar
-                var navbarToggleBtn = document.getElementById('navbarToggleBtn');
-
-                // Aggiungi un gestore di eventi al clic degli elementi di navigazione
-                var navbarNavItems = document.querySelectorAll('.navbar-nav a');
-                navbarNavItems.forEach(function (navItem) {
-                    navItem.addEventListener('click', function () {
-                        // Chiudi la navbar
-                        var bsCollapse = new bootstrap.Collapse(navbarToggleBtn);
-                        bsCollapse.hide();
-                    });
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>
